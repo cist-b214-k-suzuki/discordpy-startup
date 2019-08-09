@@ -11,9 +11,13 @@ async def on_command_error(ctx, error):
     await ctx.send(str(error))
 
 
-@bot.command()
+@bot.commands
 async def otupi(ctx):
     await ctx.send('ドラゴンフラッグ')
+
+@bot.commands
+async def bakunetu(ctx):
+    await ctx.send('おちんぽ大好き')
 
 
 bot.run(token)
