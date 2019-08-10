@@ -15,5 +15,8 @@ async def on_command_error(ctx, error):
 async def otupi(ctx):
     await ctx.send('ドラゴンフラッグ')
 
-
+@bot.commands
+async def test(ctx):
+    await ctx.send('tttt')
+    
 bot.run(token)
